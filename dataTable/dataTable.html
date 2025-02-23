@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>data Table</title>
+  <link rel="stylesheet" href="./dataTable.css">
+</head>
+
+<body>
+
+<div class="header">
+  <p class="heading">Purchase Order Tracking</p>
+  <p class="details">Use this Purchase Order Tracking page in conjunction with exercises to learn to use bots to search for data, and extract data from multiple pages.</p>
+</div>
+
+<div class="table-container">
+
+  <div class="content">
+
+      <h2>Purchase Orders</h2>
+      <p>Company XZY purchase orders are all logged below. Please use the search and sorting capabilities to find the appropriate details for each order.</p>
+      <div class="line"></div>
+
+      <div class="searchBox">
+        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchTable()">
+      </div>
+      
+
+
+    <table>
+      <tr>
+        <th>PO Number</th>
+        <th>Buyer Org</th>
+        <th>Buyer Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Ship Date</th>
+        <th>Order Total</th>
+      </tr>
+
+      <tbody>
+        
+        <tr>
+          <td class="color">43-304-6107</td>
+          <td class="color">Goldman Sachs</td>
+          <td class="color">200 West Street</td>
+          <td class="color">New York City</td>
+          <td class="color">NY</td>
+          <td class="color">10282</td>
+          <td class="color">10/10/2020</td>
+          <td class="color">$866.04</td>
+        </tr>
+        <tr>
+          <td>67-557-8464</td>
+          <td>The Walt Disney Company</td>
+          <td>500 South Buena Vista Street</td>
+          <td>Los Angeles</td>
+          <td>CA</td>
+          <td>91521</td>
+          <td>5/17/2020</td>
+          <td>$579.09</td>
+        </tr>
+        <tr>
+          <td class="color">56-558-2843</td>
+          <td class="color">United Airlines</td>
+          <td class="color">233 South Wacker Drive</td>
+          <td class="color">Chicago</td>
+          <td class="color">IL</td>
+          <td class="color">60606</td>
+          <td class="color">6/11/2019</td>
+          <td class="color">$954.39</td>
+        </tr>
+        <tr>
+          <td>33-572-9423</td>
+          <td>ConocoPhillips</td>
+          <td>925 North Eldridge Parkway</td>
+          <td>Houston</td>
+          <td>TX</td>
+          <td>77079</td>
+          <td>11/19/2020</td>
+          <td>$172.23</td>
+        </tr>
+        <tr>
+          <td class="color">48-268-6275</td>
+          <td class="color">Avnet</td>
+          <td class="color">South 47th Street</td>
+          <td class="color">Phoenix</td>
+          <td class="color">AZ</td>
+          <td class="color">85034</td>
+          <td class="color">9/8/2019</td>
+          <td class="color">$90.86</td>
+        </tr>
+        <tr>
+          <td>72-867-7778</td>
+          <td>Aramark</td>
+          <td>Market Street</td>
+          <td>Philadelphia</td>
+          <td>PA</td>
+          <td>19103</td>
+          <td>12/1/2019</td>
+          <td>$640.53</td>
+        </tr>
+        <tr>
+          <td class="color">37-332-5302</td>
+          <td class="color">Valero Energy</td>
+          <td class="color">One Valero Way</td>
+          <td class="color">San Antonio</td>
+          <td class="color">TX</td>
+          <td class="color">78249</td>
+          <td class="color">10/1/2019</td>
+          <td class="color">$349.04</td>
+        </tr>
+        <tr>
+          <td>96-138-2180</td>
+          <td>Sempra Energy</td>
+          <td>488 8th Avenue</td>
+          <td>San Diego</td>
+          <td>CA</td>
+          <td>92101</td>
+          <td>7/17/2020</td>
+          <td>$432.32</td>
+        </tr>
+        <tr>
+          <td class="color">46-061-0521</td>
+          <td class="color">AT&T</td>
+          <td class="color">South Akard Street</td>
+          <td class="color">Bismarck</td>
+          <td class="color">ND</td>
+          <td class="color">75202</td>
+          <td class="color">7/7/2020</td>
+          <td class="color">$147.45</td>
+        </tr>
+        <tr>
+          <td>15-773-4870</td>
+          <td>Whole Foods Market</td>
+          <td>North Lamar Boulevard</td>
+          <td>Austin</td>
+          <td>TX</td>
+          <td>78703</td>
+          <td>5/28/2020</td>
+          <td>$918.73</td>
+        </tr>
+
+        <tr>
+          <td class="color">74-408-0512</td>
+          <td class="color">Fidelity National Financial</td>
+          <td class="color">Riverside Avenue</td>
+          <td class="color">Jacksonville</td>
+          <td class="color">FL</td>
+          <td class="color">32204</td>
+          <td class="color">2/13/2020</td>
+          <td class="color">$473.61</td>
+        </tr>
+        <tr>
+          <td>22-479-5205</td>
+          <td>BNSF Railway</td>
+          <td>2650 Lou Menk Drive</td>
+          <td>Fort Worth</td>
+          <td>TX</td>
+          <td>76131</td>
+          <td>11/28/2019</td>
+          <td>$268.83</td>
+        </tr>
+        <tr>
+          <td class="color">72-077-69933</td>
+          <td class="color">Nationwide Mutual Insurance</td>
+          <td class="color">One Nationwide Plaza</td>
+          <td class="color">Columbus</td>
+          <td class="color">OH</td>
+          <td class="color">43215</td>
+          <td class="color">9/23/2020</td>
+          <td class="color">$981.33</td>
+        </tr>
+        <tr>
+          <td>42-757-2990</td>
+          <td>Duke Energy</td>
+          <td>550 South Tryon Street</td>
+          <td>Charlotte</td>
+          <td>NC</td>
+          <td>28202</td>
+          <td>5/19/2019</td>
+          <td>$25.98</td>
+        </tr>
+        <tr>
+          <td class="color">19-899-4205</td>
+          <td class="color">Anthem</td>
+          <td class="color">220 Virginia Avenue</td>
+          <td class="color">Indianapolis</td>
+          <td class="color">IN</td>
+          <td class="color">46204</td>
+          <td class="color">9/29/2019</td>
+          <td class="color">$993.60</td>
+        </tr>
+        <tr>
+          <td>80-626-9772</td>
+          <td>Zen Group</td>
+          <td>08 Jackson Hill</td>
+          <td>San Francisco</td>
+          <td>CA</td>
+          <td>63686</td>
+          <td>10/19/2020</td>
+          <td>$566.21</td>
+        </tr>
+        <tr>
+          <td class="color">25-794-7802</td>
+          <td class="color">Starbucks</td>
+          <td class="color">Utah Avenue South</td>
+          <td class="color">Seattle</td>
+          <td class="color">WA</td>
+          <td class="color">98134</td>
+          <td class="color">9/16/2019</td>
+          <td class="color">$37.80</td>
+        </tr>
+        <tr>
+          <td>81-129-6177</td>
+          <td>DaVita</td>
+          <td>2000 16th Street</td>
+          <td>Denver</td>
+          <td>CO</td>
+          <td>80202</td>
+          <td>6/19/2020</td>
+          <td>$73.61</td>
+        </tr>
+        <tr>
+          <td class="color">32-643-1821</td>
+          <td class="color">Fannie Mae</td>
+          <td class="color">5th Street NW</td>
+          <td class="color">Washington</td>
+          <td class="color">DC</td>
+          <td class="color">20005</td>
+          <td class="color">7/13/2020</td>
+          <td class="color">$479.61</td>
+        </tr>
+        <tr>
+          <td>34-035-8000</td>
+          <td>Liberty Mutual Insurance</td>
+          <td>175 Berkeley Street</td>
+          <td>Boston</td>
+          <td>MA</td>
+          <td>02116</td>
+          <td>1/27/2020</td>
+          <td>$888.61</td>
+        </tr>
+      </tbody>
+
+      
+    </table>
+
+
+    <div class="pagination" id="pagination"></div>
+
+
+    
+
+  </div>  
+
+</div>
+
+<script src="./dataTable.js"></script>
+
+</body>
+</html>
+

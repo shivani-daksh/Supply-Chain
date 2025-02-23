@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./loginPage.css" />
+  </head>
+  <body>
+    <div class="area">
+      <div class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+
+      <!-- old html -->
+      <main>
+        <div class="login-card">
+          <div class="logo">
+            <img
+              class="truck-image"
+              src="../Images/truck.png"
+              alt="truck-image"
+            />
+          </div>
+
+          <p class="sign-in">Sign In</p>
+
+          <form  onsubmit = "
+          redirectToPage(event);">
+            <input
+              class="email-input js-email-input"
+              type="text"
+              placeholder="Username"
+              name="email"
+            />
+            <input
+              class="password-input js-password-input"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+
+            <div class="checkbox-window">
+              <input id="checkbox" class="checkbox-input" type="checkbox" name="remember" />
+             <label class="remember" for="checkbox">Remember Email Address</label>
+            </div>
+
+            <button type="submit" class="sign-in-btn js-signIn-btn">SIGN IN</button>
+          </form>
+        </div>
+
+
+        <div class="js-warning warning-container">
+         
+        </div>
+
+      </main>
+    </div>
+<script src="./loginPage.js"></script>
+  </body>
+</html>
