@@ -56,6 +56,7 @@ const poNumbers = [
           submitButton.disabled = true;
           submitButton.style.cursor = "not-allowed";
           submitButton.style.opacity = "0.6";
+          submitButton.style.boxShadow = "none";
         } else {
           document.querySelector('.popup-heading').textContent = 'Error';
           document.querySelector('.details').textContent = "Please fill in all fields before submitting.";
@@ -63,8 +64,6 @@ const poNumbers = [
            document.querySelector('.fa-solid').classList.add('fa-circle-xmark');
 
         }
-
-//...
 
         document.getElementById("popup").style.display = "flex";
         document.getElementById("overlay").style.display = "block";
@@ -78,4 +77,6 @@ const poNumbers = [
       document.querySelector(".submit-button").addEventListener("click", showPopup);
       document.querySelector(".ok-btn").addEventListener("click", closePopup);
     });
+
+    
   
