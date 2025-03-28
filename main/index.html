@@ -1,409 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Supply Chain Management</title>
-  <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Supply Chain Management</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="upper-block">
       <div class="content">
         <div class="header-image-container">
-          <img class="header-image" src="../Images/horizontal_on_transparent_by_logaster.png" alt="CYB-image">
+          <img
+            class="header-image"
+            src="../Images/horizontal_on_transparent_by_logaster.png"
+            alt="CYB-image"
+          />
         </div>
 
         <div class="line"></div>
 
         <div class="instructions">
           <p>
-            A series of rotating Purchase Orders are displayed below. For each purchase order in the list, capture the ship date, order total, and the state in which the buyer resides from the<a class="procurement-anywhere-link" href="../loginPage/loginPage.html" target="_blank"> CYB Procurement Services </a>web app. (username: admin@cybprocurementservices.com password: propacksh!p) Based on the buyer's state, look up the agent responsible for that state in the Agent Territory XLSX available below. Use this data to assign each PO to the appropriate agent before submitting the form.
+            A series of rotating Purchase Orders are displayed below. For each
+            purchase order in the list, capture the ship date, order total, and
+            the state in which the buyer resides from the<a
+              class="procurement-anywhere-link"
+              href="../loginPage/loginPage.html"
+              target="_blank"
+            >
+              CYB Procurement Services </a
+            >web app. (username: admin@cybprocurementservices.com password:
+            propacksh!p) Based on the buyer's state, look up the agent
+            responsible for that state in the Agent Territory XLSX available
+            below. Use this data to assign each PO to the appropriate agent
+            before submitting the form.
           </p>
         </div>
-        
 
-        <button class="download-button">
-          <a class="download-xl-link" href="../StateAssignments.xls" download="file.xls">Download Agent Territory Spreadsheet</a>
-          
-        </button>
-
+        <a
+          class="download-xl-link"
+          href="../StateAssignments.xls"
+          download="file.xls"
+          ><button class="download-xl-button">
+            Download Agent Territory Spreadsheet
+          </button>
+        </a>
       </div>
     </div>
 
-
-
-
-
     <div class="lower-block">
       <div class="content">
-        
         <div class="info">
           <h1>Purchase Orders</h1>
-            <p>The following purchase orders must have their missing data filled in and they must be assigned to the appropriate individual based on the state in which their buyer resides. Note: All Order Total values need to be submitted as numbers only, no '$'.
-            </p>
+          <p>
+            The following purchase orders must have their missing data filled in
+            and they must be assigned to the appropriate individual based on the
+            state in which their buyer resides. Note: All Order Total values
+            need to be submitted as numbers only, no '$'.
+          </p>
         </div>
-        
+
         <form>
-
-        <div class="forms">
-
-          <div class="form-group">
-            <p class="po-number">PO Number</p>
-            <div class="form-input">
-              <input class="po-input" type="text" value="67-557-8464" readonly>
-            </div>
-          </div>
-
-
-          <div class="horizontal">
-
-            <div class="forms-group">
-              <p class="po-number">Ship Date</p>
+          <div class="forms">
+            <div class="form-group">
+              <p class="po-number">PO Number</p>
               <div class="form-input">
-              <input type="text">
+                <input
+                  class="po-input"
+                  type="text"
+                  value="67-557-8464"
+                  readonly
+                />
               </div>
             </div>
 
-            <div class="forms-group">
-              <p class="po-number">Order Total</p>  
-              <div class="form-input">
-                <div class="dollar-sign">$</div>
-              <input type="text">
+            <div class="horizontal">
+              <div class="forms-group">
+                <p class="po-number">Ship Date</p>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
               </div>
-            </div>
 
-            <div class="forms-group">
-              <p class="po-number"> Assigned Agent</p>  
-              <div class="form-input">
-              <select class="dropdown">
-                <option value="agent">Agent</option>
-                <option value="alex">Alex Parker</option>
-                <option value="jordan">Jordan Blake</option>
-                <option value="chris">Chris Nolan</option>
-                <option value="sam">Sam Carter</option>
-                <option value="taylor">Taylor Quinn</option>
-                <option value="tony">Tony Stark</option>
-              </select>
-              </div>
-            </div>
-
-          </div>
-     
-        </div>
-
-        <div class="forms">
-
-          <div class="form-group">
-            <p class="po-number">PO Number</p>
-            <div class="form-input">
-              <input class="po-input" type="text" value="56-558-2843" readonly>
-            </div>
-          </div>
-
-
-          <div class="horizontal">
-
-            <div class="forms-group">
-              <p class="po-number">Ship Date</p>
-              <div class="form-input">
-              <input type="text">
-              </div>
-            </div>
-
-            <div class="forms-group">
-              <p class="po-number">Order Total</p>  
-              <div class="form-input">
-                <div class="dollar-sign">$</div>
-              <input type="text">
-              </div>
-            </div>
-
-            <div class="forms-group">
-              <p class="po-number"> Assigned Agent</p>  
-              <div class="form-input">
-                <select class="dropdown">
-                  <option value="agent">Agent</option>
-                  <option value="alex">Alex Parker</option>
-                  <option value="jordan">Jordan Blake</option>
-                  <option value="chris">Chris Nolan</option>
-                  <option value="sam">Sam Carter</option>
-                  <option value="taylor">Taylor Quinn</option>
-                  <option value="tony">Tony Stark</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-    
-         
-        </div>
-
-        <div class="forms">
-
-          <div class="form-group">
-            <p class="po-number">PO Number</p>
-            <div class="form-input">
-              <input class="po-input" type="text" value="33-572-9423" readonly>
-            </div>
-          </div>
-
-
-          <div class="horizontal">
-
-            <div class="forms-group">
-              <p class="po-number">Ship Date</p>
-              <div class="form-input">
-              <input type="text">
-              </div>
-            </div>
-
-            <div class="forms-group">
-              <p class="po-number">Order Total</p>  
+              <div class="forms-group">
+                <p class="po-number">Order Total</p>
                 <div class="form-input">
                   <div class="dollar-sign">$</div>
-              <input type="text">
+                  <input type="text" />
+                </div>
               </div>
-            </div>
 
-            <div class="forms-group">
-              <p class="po-number"> Assigned Agent</p>  
-              <div class="form-input">
-                <select class="dropdown">
-                  <option value="agent">Agent</option>
-                  <option value="alex">Alex Parker</option>
-                  <option value="jordan">Jordan Blake</option>
-                  <option value="chris">Chris Nolan</option>
-                  <option value="sam">Sam Carter</option>
-                  <option value="taylor">Taylor Quinn</option>
-                  <option value="tony">Tony Stark</option>
-                </select>
+              <div class="forms-group">
+                <p class="po-number">Assigned Agent</p>
+                <div class="form-input">
+                  <select class="dropdown">
+                    <option value="agent">Agent</option>
+                    <option value="alex">Alex Parker</option>
+                    <option value="jordan">Jordan Blake</option>
+                    <option value="chris">Chris Nolan</option>
+                    <option value="sam">Sam Carter</option>
+                    <option value="taylor">Taylor Quinn</option>
+                    <option value="tony">Tony Stark</option>
+                  </select>
+                </div>
               </div>
-            </div>
-
-          </div>
-    
-         
-        </div>
-
-        <div class="forms">
-
-          <div class="form-group">
-            <p class="po-number">PO Number</p>
-            <div class="form-input">
-              <input class="po-input" type="text" value="48-268-6275" readonly>
             </div>
           </div>
 
-
-          <div class="horizontal">
-
-            <div class="forms-group">
-              <p class="po-number">Ship Date</p>
+          <div class="forms">
+            <div class="form-group">
+              <p class="po-number">PO Number</p>
               <div class="form-input">
-              <input type="text">
+                <input
+                  class="po-input"
+                  type="text"
+                  value="56-558-2843"
+                  readonly
+                />
               </div>
             </div>
 
-            <div class="forms-group">
-              <p class="po-number">Order Total</p>  
-              <div class="form-input">
-                <div class="dollar-sign">$</div>
-              <input type="text">
+            <div class="horizontal">
+              <div class="forms-group">
+                <p class="po-number">Ship Date</p>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
               </div>
-            </div>
 
-            <div class="forms-group">
-              <p class="po-number"> Assigned Agent</p>  
-              <div class="form-input">
-                <select class="dropdown">
-                  <option value="agent">Agent</option>
-                  <option value="alex">Alex Parker</option>
-                  <option value="jordan">Jordan Blake</option>
-                  <option value="chris">Chris Nolan</option>
-                  <option value="sam">Sam Carter</option>
-                  <option value="taylor">Taylor Quinn</option>
-                  <option value="tony">Tony Stark</option>
-                </select>
+              <div class="forms-group">
+                <p class="po-number">Order Total</p>
+                <div class="form-input">
+                  <div class="dollar-sign">$</div>
+                  <input type="text" />
+                </div>
               </div>
-            </div>
 
-          </div>
-    
-         
-        </div>
-
-        <div class="forms">
-
-          <div class="form-group">
-            <p class="po-number">PO Number</p>
-            <div class="form-input">
-              <input class="po-input" type="text" value="72-867-7778" readonly>
-            </div>
-          </div>
-
-
-          <div class="horizontal">
-
-            <div class="forms-group">
-              <p class="po-number">Ship Date</p>
-              <div class="form-input">
-              <input type="text">
+              <div class="forms-group">
+                <p class="po-number">Assigned Agent</p>
+                <div class="form-input">
+                  <select class="dropdown">
+                    <option value="agent">Agent</option>
+                    <option value="alex">Alex Parker</option>
+                    <option value="jordan">Jordan Blake</option>
+                    <option value="chris">Chris Nolan</option>
+                    <option value="sam">Sam Carter</option>
+                    <option value="taylor">Taylor Quinn</option>
+                    <option value="tony">Tony Stark</option>
+                  </select>
+                </div>
               </div>
-            </div>
-
-            <div class="forms-group">
-              <p class="po-number">Order Total</p>  
-              <div class="form-input">
-                <div class="dollar-sign">$</div>
-              <input type="text">
-              </div>
-            </div>
-
-            <div class="forms-group">
-              <p class="po-number"> Assigned Agent</p>  
-              <div class="form-input">
-                <select class="dropdown">
-                  <option value="agent">Agent</option>
-                  <option value="alex">Alex Parker</option>
-                  <option value="jordan">Jordan Blake</option>
-                  <option value="chris">Chris Nolan</option>
-                  <option value="sam">Sam Carter</option>
-                  <option value="taylor">Taylor Quinn</option>
-                  <option value="tony">Tony Stark</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-    
-         
-        </div>
-
-        <div class="forms">
-
-          <div class="form-group">
-            <p class="po-number">PO Number</p>
-            <div class="form-input">
-              <input class="po-input" type="text" value="37-332-5302" readonly>
             </div>
           </div>
 
-
-          <div class="horizontal">
-
-            <div class="forms-group">
-              <p class="po-number">Ship Date</p>
+          <div class="forms">
+            <div class="form-group">
+              <p class="po-number">PO Number</p>
               <div class="form-input">
-              <input type="text">
+                <input
+                  class="po-input"
+                  type="text"
+                  value="33-572-9423"
+                  readonly
+                />
               </div>
             </div>
 
-            <div class="forms-group">
-              <p class="po-number">Order Total</p>  
-              <div class="form-input">
-                <div class="dollar-sign">$</div>
-              <input type="text">
+            <div class="horizontal">
+              <div class="forms-group">
+                <p class="po-number">Ship Date</p>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Order Total</p>
+                <div class="form-input">
+                  <div class="dollar-sign">$</div>
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Assigned Agent</p>
+                <div class="form-input">
+                  <select class="dropdown">
+                    <option value="agent">Agent</option>
+                    <option value="alex">Alex Parker</option>
+                    <option value="jordan">Jordan Blake</option>
+                    <option value="chris">Chris Nolan</option>
+                    <option value="sam">Sam Carter</option>
+                    <option value="taylor">Taylor Quinn</option>
+                    <option value="tony">Tony Stark</option>
+                  </select>
+                </div>
               </div>
             </div>
-
-            <div class="forms-group">
-              <p class="po-number"> Assigned Agent</p>  
-              <div class="form-input">
-                <select class="dropdown">
-                  <option value="agent">Agent</option>
-                  <option value="alex">Alex Parker</option>
-                  <option value="jordan">Jordan Blake</option>
-                  <option value="chris">Chris Nolan</option>
-                  <option value="sam">Sam Carter</option>
-                  <option value="taylor">Taylor Quinn</option>
-                  <option value="tony">Tony Stark</option>
-                </select>
-              </div>
-            </div>
-
           </div>
-    
-         
-        </div>
 
-        <div class="forms">
+          <div class="forms">
+            <div class="form-group">
+              <p class="po-number">PO Number</p>
+              <div class="form-input">
+                <input
+                  class="po-input"
+                  type="text"
+                  value="48-268-6275"
+                  readonly
+                />
+              </div>
+            </div>
 
-          <div class="form-group">
-            <p class="po-number">PO Number</p>
-            <div class="form-input">
-              <input class="po-input" type="text" value="96-138-2180" readonly>
+            <div class="horizontal">
+              <div class="forms-group">
+                <p class="po-number">Ship Date</p>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Order Total</p>
+                <div class="form-input">
+                  <div class="dollar-sign">$</div>
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Assigned Agent</p>
+                <div class="form-input">
+                  <select class="dropdown">
+                    <option value="agent">Agent</option>
+                    <option value="alex">Alex Parker</option>
+                    <option value="jordan">Jordan Blake</option>
+                    <option value="chris">Chris Nolan</option>
+                    <option value="sam">Sam Carter</option>
+                    <option value="taylor">Taylor Quinn</option>
+                    <option value="tony">Tony Stark</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
 
-
-          <div class="horizontal">
-
-            <div class="forms-group">
-              <p class="po-number">Ship Date</p>
+          <div class="forms">
+            <div class="form-group">
+              <p class="po-number">PO Number</p>
               <div class="form-input">
-              <input type="text">
+                <input
+                  class="po-input"
+                  type="text"
+                  value="72-867-7778"
+                  readonly
+                />
               </div>
             </div>
 
-            <div class="forms-group">
-              <p class="po-number">Order Total</p>  
-              <div class="form-input">
-                <div class="dollar-sign">$</div>
-              <input type="text">
+            <div class="horizontal">
+              <div class="forms-group">
+                <p class="po-number">Ship Date</p>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Order Total</p>
+                <div class="form-input">
+                  <div class="dollar-sign">$</div>
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Assigned Agent</p>
+                <div class="form-input">
+                  <select class="dropdown">
+                    <option value="agent">Agent</option>
+                    <option value="alex">Alex Parker</option>
+                    <option value="jordan">Jordan Blake</option>
+                    <option value="chris">Chris Nolan</option>
+                    <option value="sam">Sam Carter</option>
+                    <option value="taylor">Taylor Quinn</option>
+                    <option value="tony">Tony Stark</option>
+                  </select>
+                </div>
               </div>
             </div>
-
-            <div class="forms-group">
-              <p class="po-number"> Assigned Agent</p>  
-              <div class="form-input">
-                <select class="dropdown">
-                  <option value="agent">Agent</option>
-                  <option value="alex">Alex Parker</option>
-                  <option value="jordan">Jordan Blake</option>
-                  <option value="chris">Chris Nolan</option>
-                  <option value="sam">Sam Carter</option>
-                  <option value="taylor">Taylor Quinn</option>
-                  <option value="tony">Tony Stark</option>
-                </select>
-              </div>
-            </div>
-
           </div>
-    
-         
-        </div>
 
-        <button class="submit-button" type="submit" >SUBMIT</button>
+          <div class="forms">
+            <div class="form-group">
+              <p class="po-number">PO Number</p>
+              <div class="form-input">
+                <input
+                  class="po-input"
+                  type="text"
+                  value="37-332-5302"
+                  readonly
+                />
+              </div>
+            </div>
 
+            <div class="horizontal">
+              <div class="forms-group">
+                <p class="po-number">Ship Date</p>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
+              </div>
 
-      </form>
+              <div class="forms-group">
+                <p class="po-number">Order Total</p>
+                <div class="form-input">
+                  <div class="dollar-sign">$</div>
+                  <input type="text" />
+                </div>
+              </div>
 
+              <div class="forms-group">
+                <p class="po-number">Assigned Agent</p>
+                <div class="form-input">
+                  <select class="dropdown">
+                    <option value="agent">Agent</option>
+                    <option value="alex">Alex Parker</option>
+                    <option value="jordan">Jordan Blake</option>
+                    <option value="chris">Chris Nolan</option>
+                    <option value="sam">Sam Carter</option>
+                    <option value="taylor">Taylor Quinn</option>
+                    <option value="tony">Tony Stark</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="forms">
+            <div class="form-group">
+              <p class="po-number">PO Number</p>
+              <div class="form-input">
+                <input
+                  class="po-input"
+                  type="text"
+                  value="96-138-2180"
+                  readonly
+                />
+              </div>
+            </div>
 
-    
+            <div class="horizontal">
+              <div class="forms-group">
+                <p class="po-number">Ship Date</p>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Order Total</p>
+                <div class="form-input">
+                  <div class="dollar-sign">$</div>
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="forms-group">
+                <p class="po-number">Assigned Agent</p>
+                <div class="form-input">
+                  <select class="dropdown">
+                    <option value="agent">Agent</option>
+                    <option value="alex">Alex Parker</option>
+                    <option value="jordan">Jordan Blake</option>
+                    <option value="chris">Chris Nolan</option>
+                    <option value="sam">Sam Carter</option>
+                    <option value="taylor">Taylor Quinn</option>
+                    <option value="tony">Tony Stark</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="submit-button" type="submit">SUBMIT</button>
+        </form>
+      </div>
     </div>
 
-  </div>
+    <div class="overlay" id="overlay"></div>
 
+    <div class="popup" id="popup">
+      <i class="fa-solid blue-tick"></i>
 
-  <div class="overlay" id="overlay"></div>
-
-  <div class="popup" id="popup">
-    <i class="fa-solid blue-tick"></i>
-
-
-    <!-- <i class="fa-solid fa-check-circle blue-tick"></i>
+      <!-- <i class="fa-solid fa-check-circle blue-tick"></i>
     <i class="fa-solid fa-circle-xmark "></i> -->
-    <h2 class="popup-heading">Thank You!</h2>
-    <p class="details">Your form has been submitted successfully.</p>
-    <button class="ok-btn">OK</button>
-  </div>
+      <h2 class="popup-heading">Thank You!</h2>
+      <p class="details">Your form has been submitted successfully.</p>
+      <button class="ok-btn">OK</button>
+    </div>
 
-
-<script src="./index.js"></script>
-
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

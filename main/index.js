@@ -51,6 +51,11 @@ const poNumbers = [
           document.querySelector('.details').textContent = 'Your form has been submitted successfully.';
           document.querySelector('.fa-solid').classList.remove('fa-circle-xmark');
           document.querySelector('.fa-solid').classList.add('fa-check-circle');
+
+          let submitButton = document.querySelector(".submit-button");
+          submitButton.disabled = true;
+          submitButton.style.cursor = "not-allowed";
+          submitButton.style.opacity = "0.6";
         } else {
           document.querySelector('.popup-heading').textContent = 'Error';
           document.querySelector('.details').textContent = "Please fill in all fields before submitting.";
